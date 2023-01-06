@@ -6,10 +6,10 @@ public struct StartPlayerContentView: View {
     
     public var body: some View {
         #if DEBUG
-        Text("Hello Debug, StartPlayerContentView!")
+        Text("Hello Debug, StartPlayerContentView! testik")
             .padding()
         #else
-        Text("Hello Release, StartPlayerContentView!")
+        Text("Hello Release, StartPlayerContentView! testik")
             .padding()
         #endif
         
