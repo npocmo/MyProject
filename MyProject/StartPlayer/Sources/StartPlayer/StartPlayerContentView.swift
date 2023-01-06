@@ -5,14 +5,17 @@ public struct StartPlayerContentView: View {
     public init() {}
     
     public var body: some View {
-        #if DEBUG
+        #if MY_CUSTOM_RELEASE
+        Text("Hello Release, StartPlayerContentView! testik")
+            .padding()
+        #else
+        #endif
+        
+        #if MY_CUSTOM_DEBUG
         Text("Hello Debug, StartPlayerContentView! testik")
             .padding()
         #else
-        Text("Hello Release, StartPlayerContentView! testik")
-            .padding()
         #endif
-        
     }
 }
 

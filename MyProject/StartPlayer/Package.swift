@@ -3,6 +3,12 @@
 
 import PackageDescription
 
+let settings: [SwiftSetting]
+settings = [
+    .define("MY_CUSTOM_DEBUG", .when(configuration: .debug)),
+    .define("MY_CUSTOM_RELEASE", .when(configuration: .release)),
+]
+
 let package = Package(
     name: "StartPlayer",
     platforms: [.iOS(.v15)],
@@ -16,7 +22,9 @@ let package = Package(
     targets: [
         .target(
             name: "StartPlayer",
-            dependencies: []),
+            dependencies: [],
+            swiftSettings: settings
+        ),
         .testTarget(
             name: "StartPlayerTests",
             dependencies: ["StartPlayer"]),
