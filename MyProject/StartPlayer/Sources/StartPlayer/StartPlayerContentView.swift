@@ -5,8 +5,14 @@ public struct StartPlayerContentView: View {
     public init() {}
     
     public var body: some View {
-        Text("Hello, StartPlayerContentView!")
+        #if DEBUG
+        Text("Hello Debug, StartPlayerContentView!")
             .padding()
+        #else
+        Text("Hello Release, StartPlayerContentView!")
+            .padding()
+        #endif
+        
     }
 }
 
