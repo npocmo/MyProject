@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43C2611F2968B6A4000D9C41 /* StartPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 43C2611E2968B6A4000D9C41 /* StartPlayer */; };
 		43CDC2E02968AC4A00DC6D83 /* MyProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CDC2DF2968AC4A00DC6D83 /* MyProjectApp.swift */; };
-		43CDC2E22968AC4A00DC6D83 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CDC2E12968AC4A00DC6D83 /* ContentView.swift */; };
 		43CDC2E42968AC4C00DC6D83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43CDC2E32968AC4C00DC6D83 /* Assets.xcassets */; };
 		43CDC2E72968AC4C00DC6D83 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43CDC2E62968AC4C00DC6D83 /* Preview Assets.xcassets */; };
 		43CDC2F12968AC4C00DC6D83 /* MyProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CDC2F02968AC4C00DC6D83 /* MyProjectTests.swift */; };
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		43CDC2DC2968AC4A00DC6D83 /* MyProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43CDC2DF2968AC4A00DC6D83 /* MyProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProjectApp.swift; sourceTree = "<group>"; };
-		43CDC2E12968AC4A00DC6D83 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		43CDC2E32968AC4C00DC6D83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43CDC2E62968AC4C00DC6D83 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		43CDC2EC2968AC4C00DC6D83 /* MyProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43C2611F2968B6A4000D9C41 /* StartPlayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +71,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43C2611D2968B6A4000D9C41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		43CDC2D32968AC4A00DC6D83 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +85,7 @@
 				43CDC2EF2968AC4C00DC6D83 /* MyProjectTests */,
 				43CDC2F92968AC4C00DC6D83 /* MyProjectUITests */,
 				43CDC2DD2968AC4A00DC6D83 /* Products */,
+				43C2611D2968B6A4000D9C41 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,7 +103,6 @@
 			isa = PBXGroup;
 			children = (
 				43CDC2DF2968AC4A00DC6D83 /* MyProjectApp.swift */,
-				43CDC2E12968AC4A00DC6D83 /* ContentView.swift */,
 				43CDC2E32968AC4C00DC6D83 /* Assets.xcassets */,
 				43CDC2E52968AC4C00DC6D83 /* Preview Content */,
 			);
@@ -143,6 +150,9 @@
 			dependencies = (
 			);
 			name = MyProject;
+			packageProductDependencies = (
+				43C2611E2968B6A4000D9C41 /* StartPlayer */,
+			);
 			productName = MyProject;
 			productReference = 43CDC2DC2968AC4A00DC6D83 /* MyProject.app */;
 			productType = "com.apple.product-type.application";
@@ -257,7 +267,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43CDC2E22968AC4A00DC6D83 /* ContentView.swift in Sources */,
 				43CDC2E02968AC4A00DC6D83 /* MyProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -583,6 +592,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		43C2611E2968B6A4000D9C41 /* StartPlayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = StartPlayer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 43CDC2D42968AC4A00DC6D83 /* Project object */;
 }

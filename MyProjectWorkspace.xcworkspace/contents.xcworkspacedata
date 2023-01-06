@@ -4,4 +4,7 @@
    <FileRef
       location = "container:MyProject/MyProject.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:MyProject/StartPlayer">
+   </FileRef>
 </Workspace>
