@@ -2,20 +2,28 @@ import SwiftUI
 
 public struct StartPlayerContentView: View {
     
-    public init() {}
+    public init() {
+        #if DEBUG
+        print("DEBUG")
+        #elseif Debug
+        print("Debug")
+        #elseif DebugTest
+        print("DebugTest")
+        #elseif Beta
+        print("Beta")
+        #elseif Release
+        print("Release")
+        #elseif MY_CUSTOM_DEBUG
+        print("MY_CUSTOM_DEBUG")
+        #elseif MY_CUSTOM_RELEASE
+        print("MY_CUSTOM_RELEASE")
+        #else
+        print("Other")
+        #endif
+    }
     
     public var body: some View {
-        #if MY_CUSTOM_RELEASE
-        Text("Hello Release, StartPlayerContentView! testik")
-            .padding()
-        #else
-        #endif
-        
-        #if MY_CUSTOM_DEBUG
-        Text("Hello Debug, StartPlayerContentView! testik")
-            .padding()
-        #else
-        #endif
+        Text("App").padding()
     }
 }
 

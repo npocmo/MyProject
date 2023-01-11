@@ -15,7 +15,8 @@ let package = Package(
     products: [
         .library(
             name: "StartPlayer",
-            targets: ["StartPlayer"]),
+            targets: ["StartPlayer"]
+        ),
     ],
     dependencies: [
     ],
