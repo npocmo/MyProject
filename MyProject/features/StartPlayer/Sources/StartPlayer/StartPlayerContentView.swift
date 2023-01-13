@@ -24,6 +24,8 @@ public struct StartPlayerContentView: View {
         #if Debug
         print("Debug")
         #endif
+        
+        _ = Observable.just("1")
     }
     
     public var body: some View {

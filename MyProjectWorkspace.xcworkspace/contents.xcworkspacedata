@@ -4,7 +4,18 @@
    <FileRef
       location = "container:MyProject/MyProject.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "group:MyProject/StartPlayer">
-   </FileRef>
+   <Group
+      location = "group:MyProject/features"
+      name = "features">
+      <FileRef
+         location = "group:StartPlayer">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:MyProject/frameworks"
+      name = "frameworks">
+      <FileRef
+         location = "group:Infrastructure">
+      </FileRef>
+   </Group>
 </Workspace>

@@ -4,6 +4,9 @@
 import PackageDescription
 
 let settings: [SwiftSetting]
+
+// dev, beta, release
+
 settings = [
     .define("MY_CUSTOM_DEBUG", .when(configuration: .debug)),
     .define("MY_CUSTOM_RELEASE", .when(configuration: .release)),
@@ -18,13 +21,11 @@ let package = Package(
             targets: ["StartPlayer"]
         ),
     ],
-    dependencies: [
-        .package(url: "https://github.com/ReactiveX/RxSwift.git", from: "6.5.0")
-    ],
+    dependencies: [.package(name: "Infrastructure", path: "../frameworks/Infrastructure")],
     targets: [
         .target(
             name: "StartPlayer",
-            dependencies: ["RxSwift"],
+            dependencies: ["Infrastructure"],
             swiftSettings: settings
         ),
         .testTarget(
