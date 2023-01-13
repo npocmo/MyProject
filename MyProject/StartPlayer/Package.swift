@@ -19,11 +19,12 @@ let package = Package(
         ),
     ],
     dependencies: [
+        .package(url: "https://github.com/ReactiveX/RxSwift.git", from: "6.5.0")
     ],
     targets: [
         .target(
             name: "StartPlayer",
-            dependencies: [],
+            dependencies: ["RxSwift"],
             swiftSettings: settings
         ),
         .testTarget(

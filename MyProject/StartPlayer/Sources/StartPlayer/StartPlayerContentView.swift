@@ -1,7 +1,7 @@
 import SwiftUI
+import RxSwift
 
 public struct StartPlayerContentView: View {
-    
     public init() {
         #if DEBUG
         print("DEBUG")
@@ -19,6 +19,10 @@ public struct StartPlayerContentView: View {
         print("MY_CUSTOM_RELEASE")
         #else
         print("Other")
+        #endif
+        
+        #if Debug
+        print("Debug")
         #endif
     }
     
