@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Volcano_Looming_High.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

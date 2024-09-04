@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Shroud_of_Silent_Mist.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

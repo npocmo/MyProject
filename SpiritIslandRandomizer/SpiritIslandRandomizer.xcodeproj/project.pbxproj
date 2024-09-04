@@ -1,0 +1,693 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		533160482C663C840099FA31 /* SpiritIslandRandomizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533160472C663C840099FA31 /* SpiritIslandRandomizerApp.swift */; };
+		5331604A2C663C840099FA31 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533160492C663C840099FA31 /* ContentView.swift */; };
+		5331604C2C663C850099FA31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5331604B2C663C850099FA31 /* Assets.xcassets */; };
+		533160502C663C850099FA31 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5331604F2C663C850099FA31 /* Preview Assets.xcassets */; };
+		5331605A2C663C850099FA31 /* SpiritIslandRandomizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533160592C663C850099FA31 /* SpiritIslandRandomizerTests.swift */; };
+		533160642C663C850099FA31 /* SpiritIslandRandomizerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533160632C663C850099FA31 /* SpiritIslandRandomizerUITests.swift */; };
+		533160662C663C850099FA31 /* SpiritIslandRandomizerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533160652C663C850099FA31 /* SpiritIslandRandomizerUITestsLaunchTests.swift */; };
+		533160732C663C9C0099FA31 /* Spirit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533160722C663C9C0099FA31 /* Spirit.swift */; };
+		533160762C6647580099FA31 /* Adversary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533160752C6647580099FA31 /* Adversary.swift */; };
+		533160792C693F070099FA31 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533160782C693F070099FA31 /* SummaryView.swift */; };
+		53B6117C2C88A9A70019FBA3 /* SpiritRandomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B6117B2C88A9A70019FBA3 /* SpiritRandomizer.swift */; };
+		53E4A2942C694CD500F2DC9A /* TierListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E4A2932C694CD500F2DC9A /* TierListView.swift */; };
+		53E4A29A2C69E89200F2DC9A /* Zoomable in Frameworks */ = {isa = PBXBuildFile; productRef = 53E4A2992C69E89200F2DC9A /* Zoomable */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		533160562C663C850099FA31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5331603C2C663C840099FA31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 533160432C663C840099FA31;
+			remoteInfo = SpiritIslandRandomizer;
+		};
+		533160602C663C850099FA31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5331603C2C663C840099FA31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 533160432C663C840099FA31;
+			remoteInfo = SpiritIslandRandomizer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		533160442C663C840099FA31 /* SpiritIslandRandomizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpiritIslandRandomizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		533160472C663C840099FA31 /* SpiritIslandRandomizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiritIslandRandomizerApp.swift; sourceTree = "<group>"; };
+		533160492C663C840099FA31 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5331604B2C663C850099FA31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5331604D2C663C850099FA31 /* SpiritIslandRandomizer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpiritIslandRandomizer.entitlements; sourceTree = "<group>"; };
+		5331604F2C663C850099FA31 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		533160552C663C850099FA31 /* SpiritIslandRandomizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpiritIslandRandomizerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		533160592C663C850099FA31 /* SpiritIslandRandomizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiritIslandRandomizerTests.swift; sourceTree = "<group>"; };
+		5331605F2C663C850099FA31 /* SpiritIslandRandomizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpiritIslandRandomizerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		533160632C663C850099FA31 /* SpiritIslandRandomizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiritIslandRandomizerUITests.swift; sourceTree = "<group>"; };
+		533160652C663C850099FA31 /* SpiritIslandRandomizerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiritIslandRandomizerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		533160722C663C9C0099FA31 /* Spirit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spirit.swift; sourceTree = "<group>"; };
+		533160752C6647580099FA31 /* Adversary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adversary.swift; sourceTree = "<group>"; };
+		533160782C693F070099FA31 /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
+		53B6117B2C88A9A70019FBA3 /* SpiritRandomizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiritRandomizer.swift; sourceTree = "<group>"; };
+		53E4A2932C694CD500F2DC9A /* TierListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TierListView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		533160412C663C840099FA31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53E4A29A2C69E89200F2DC9A /* Zoomable in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		533160522C663C850099FA31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5331605C2C663C850099FA31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5331603B2C663C840099FA31 = {
+			isa = PBXGroup;
+			children = (
+				533160462C663C840099FA31 /* SpiritIslandRandomizer */,
+				533160582C663C850099FA31 /* SpiritIslandRandomizerTests */,
+				533160622C663C850099FA31 /* SpiritIslandRandomizerUITests */,
+				533160452C663C840099FA31 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		533160452C663C840099FA31 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				533160442C663C840099FA31 /* SpiritIslandRandomizer.app */,
+				533160552C663C850099FA31 /* SpiritIslandRandomizerTests.xctest */,
+				5331605F2C663C850099FA31 /* SpiritIslandRandomizerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		533160462C663C840099FA31 /* SpiritIslandRandomizer */ = {
+			isa = PBXGroup;
+			children = (
+				53B6117A2C88A9A00019FBA3 /* Helper */,
+				533160772C693EF70099FA31 /* View */,
+				533160742C66474D0099FA31 /* Model */,
+				533160472C663C840099FA31 /* SpiritIslandRandomizerApp.swift */,
+				5331604B2C663C850099FA31 /* Assets.xcassets */,
+				5331604D2C663C850099FA31 /* SpiritIslandRandomizer.entitlements */,
+				5331604E2C663C850099FA31 /* Preview Content */,
+			);
+			path = SpiritIslandRandomizer;
+			sourceTree = "<group>";
+		};
+		5331604E2C663C850099FA31 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5331604F2C663C850099FA31 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		533160582C663C850099FA31 /* SpiritIslandRandomizerTests */ = {
+			isa = PBXGroup;
+			children = (
+				533160592C663C850099FA31 /* SpiritIslandRandomizerTests.swift */,
+			);
+			path = SpiritIslandRandomizerTests;
+			sourceTree = "<group>";
+		};
+		533160622C663C850099FA31 /* SpiritIslandRandomizerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				533160632C663C850099FA31 /* SpiritIslandRandomizerUITests.swift */,
+				533160652C663C850099FA31 /* SpiritIslandRandomizerUITestsLaunchTests.swift */,
+			);
+			path = SpiritIslandRandomizerUITests;
+			sourceTree = "<group>";
+		};
+		533160742C66474D0099FA31 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				533160722C663C9C0099FA31 /* Spirit.swift */,
+				533160752C6647580099FA31 /* Adversary.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		533160772C693EF70099FA31 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				533160492C663C840099FA31 /* ContentView.swift */,
+				533160782C693F070099FA31 /* SummaryView.swift */,
+				53E4A2932C694CD500F2DC9A /* TierListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		53B6117A2C88A9A00019FBA3 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				53B6117B2C88A9A70019FBA3 /* SpiritRandomizer.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		533160432C663C840099FA31 /* SpiritIslandRandomizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 533160692C663C850099FA31 /* Build configuration list for PBXNativeTarget "SpiritIslandRandomizer" */;
+			buildPhases = (
+				533160402C663C840099FA31 /* Sources */,
+				533160412C663C840099FA31 /* Frameworks */,
+				533160422C663C840099FA31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpiritIslandRandomizer;
+			packageProductDependencies = (
+				53E4A2992C69E89200F2DC9A /* Zoomable */,
+			);
+			productName = SpiritIslandRandomizer;
+			productReference = 533160442C663C840099FA31 /* SpiritIslandRandomizer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		533160542C663C850099FA31 /* SpiritIslandRandomizerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5331606C2C663C850099FA31 /* Build configuration list for PBXNativeTarget "SpiritIslandRandomizerTests" */;
+			buildPhases = (
+				533160512C663C850099FA31 /* Sources */,
+				533160522C663C850099FA31 /* Frameworks */,
+				533160532C663C850099FA31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				533160572C663C850099FA31 /* PBXTargetDependency */,
+			);
+			name = SpiritIslandRandomizerTests;
+			productName = SpiritIslandRandomizerTests;
+			productReference = 533160552C663C850099FA31 /* SpiritIslandRandomizerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5331605E2C663C850099FA31 /* SpiritIslandRandomizerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5331606F2C663C850099FA31 /* Build configuration list for PBXNativeTarget "SpiritIslandRandomizerUITests" */;
+			buildPhases = (
+				5331605B2C663C850099FA31 /* Sources */,
+				5331605C2C663C850099FA31 /* Frameworks */,
+				5331605D2C663C850099FA31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				533160612C663C850099FA31 /* PBXTargetDependency */,
+			);
+			name = SpiritIslandRandomizerUITests;
+			productName = SpiritIslandRandomizerUITests;
+			productReference = 5331605F2C663C850099FA31 /* SpiritIslandRandomizerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5331603C2C663C840099FA31 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					533160432C663C840099FA31 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					533160542C663C850099FA31 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 533160432C663C840099FA31;
+					};
+					5331605E2C663C850099FA31 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 533160432C663C840099FA31;
+					};
+				};
+			};
+			buildConfigurationList = 5331603F2C663C840099FA31 /* Build configuration list for PBXProject "SpiritIslandRandomizer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5331603B2C663C840099FA31;
+			packageReferences = (
+				53E4A2982C69E89200F2DC9A /* XCRemoteSwiftPackageReference "Zoomable" */,
+			);
+			productRefGroup = 533160452C663C840099FA31 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				533160432C663C840099FA31 /* SpiritIslandRandomizer */,
+				533160542C663C850099FA31 /* SpiritIslandRandomizerTests */,
+				5331605E2C663C850099FA31 /* SpiritIslandRandomizerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		533160422C663C840099FA31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				533160502C663C850099FA31 /* Preview Assets.xcassets in Resources */,
+				5331604C2C663C850099FA31 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		533160532C663C850099FA31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5331605D2C663C850099FA31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		533160402C663C840099FA31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5331604A2C663C840099FA31 /* ContentView.swift in Sources */,
+				533160732C663C9C0099FA31 /* Spirit.swift in Sources */,
+				53B6117C2C88A9A70019FBA3 /* SpiritRandomizer.swift in Sources */,
+				53E4A2942C694CD500F2DC9A /* TierListView.swift in Sources */,
+				533160792C693F070099FA31 /* SummaryView.swift in Sources */,
+				533160482C663C840099FA31 /* SpiritIslandRandomizerApp.swift in Sources */,
+				533160762C6647580099FA31 /* Adversary.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		533160512C663C850099FA31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5331605A2C663C850099FA31 /* SpiritIslandRandomizerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5331605B2C663C850099FA31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				533160642C663C850099FA31 /* SpiritIslandRandomizerUITests.swift in Sources */,
+				533160662C663C850099FA31 /* SpiritIslandRandomizerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		533160572C663C850099FA31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 533160432C663C840099FA31 /* SpiritIslandRandomizer */;
+			targetProxy = 533160562C663C850099FA31 /* PBXContainerItemProxy */;
+		};
+		533160612C663C850099FA31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 533160432C663C840099FA31 /* SpiritIslandRandomizer */;
+			targetProxy = 533160602C663C850099FA31 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		533160672C663C850099FA31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		533160682C663C850099FA31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		5331606A2C663C850099FA31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SpiritIslandRandomizer/SpiritIslandRandomizer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpiritIslandRandomizer/Preview Content\"";
+				DEVELOPMENT_TEAM = 3WHKJURUVU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.dima.test.SpiritIslandRandomizer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5331606B2C663C850099FA31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SpiritIslandRandomizer/SpiritIslandRandomizer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpiritIslandRandomizer/Preview Content\"";
+				DEVELOPMENT_TEAM = 3WHKJURUVU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.dima.test.SpiritIslandRandomizer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5331606D2C663C850099FA31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3WHKJURUVU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.dima.test.SpiritIslandRandomizerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpiritIslandRandomizer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SpiritIslandRandomizer";
+			};
+			name = Debug;
+		};
+		5331606E2C663C850099FA31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3WHKJURUVU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.dima.test.SpiritIslandRandomizerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpiritIslandRandomizer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SpiritIslandRandomizer";
+			};
+			name = Release;
+		};
+		533160702C663C850099FA31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3WHKJURUVU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.dima.test.SpiritIslandRandomizerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SpiritIslandRandomizer;
+			};
+			name = Debug;
+		};
+		533160712C663C850099FA31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3WHKJURUVU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.dima.test.SpiritIslandRandomizerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SpiritIslandRandomizer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5331603F2C663C840099FA31 /* Build configuration list for PBXProject "SpiritIslandRandomizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				533160672C663C850099FA31 /* Debug */,
+				533160682C663C850099FA31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		533160692C663C850099FA31 /* Build configuration list for PBXNativeTarget "SpiritIslandRandomizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5331606A2C663C850099FA31 /* Debug */,
+				5331606B2C663C850099FA31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5331606C2C663C850099FA31 /* Build configuration list for PBXNativeTarget "SpiritIslandRandomizerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5331606D2C663C850099FA31 /* Debug */,
+				5331606E2C663C850099FA31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5331606F2C663C850099FA31 /* Build configuration list for PBXNativeTarget "SpiritIslandRandomizerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				533160702C663C850099FA31 /* Debug */,
+				533160712C663C850099FA31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		53E4A2982C69E89200F2DC9A /* XCRemoteSwiftPackageReference "Zoomable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ryohey/Zoomable.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		53E4A2992C69E89200F2DC9A /* Zoomable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 53E4A2982C69E89200F2DC9A /* XCRemoteSwiftPackageReference "Zoomable" */;
+			productName = Zoomable;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5331603C2C663C840099FA31 /* Project object */;
+}
