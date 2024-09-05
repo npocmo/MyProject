@@ -40,7 +40,7 @@ struct ContentView: View {
                         HStack {
                             MultiSegmentPicker(
                                 selectedSegmentIndexes: $selectedTiersIndex,
-                                items: tiers
+                                items: tiers.map { return "   \($0)   "}
                             )
                             .accentColor(.blue)
                             .fixedSize()

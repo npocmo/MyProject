@@ -6,7 +6,7 @@ enum Complexity: String {
     case low, moderate, high, very_high
 }
 
-enum Tier: String, Equatable {
+enum Tier: Equatable {
     case X, S, A, B, C, D, F
 }
 
