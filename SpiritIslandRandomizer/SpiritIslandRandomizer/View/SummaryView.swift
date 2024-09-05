@@ -5,6 +5,7 @@ struct SummaryView: View {
     let spiritItems: [SpiritItem]
     let tierItems: [TierItem]
     let selectedNumberOfPlayers: Int
+    let selectedComplexityOfSpirits: String
 
     var body: some View {
         let selectedAdversary = adversariesItems.filter { $0.isChecked }.randomElement()?.adversary
@@ -44,7 +45,11 @@ struct SummaryView: View {
     }
     
     private func randomizeSpirits() -> [SpiritItem] {
-        return SpiritRandomizer().randomize(tierItems: tierItems, selectedNumberOfPlayers: selectedNumberOfPlayers)
+        return SpiritRandomizer().randomize(
+            tierItems: tierItems,
+            selectedNumberOfPlayers: selectedNumberOfPlayers,
+            selectedComplexityOfSpirits: selectedComplexityOfSpirits
+        )
     }
 }
 
@@ -127,7 +132,8 @@ struct SummaryView: View {
                     )
                 ],
                 tierItems: [.init(tier: .c), .init(tier: .b), .init(tier: .a)],
-                selectedNumberOfPlayers: 3
+                selectedNumberOfPlayers: 3,
+                selectedComplexityOfSpirits: "all"
             )
         }
     }

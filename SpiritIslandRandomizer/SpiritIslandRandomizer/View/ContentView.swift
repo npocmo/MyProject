@@ -5,13 +5,14 @@ struct ContentView: View {
     @State private var spiritItems: [SpiritItem] = spirits
     @State private var tierItems: [TierItem] = tiers
     @State private var selectedNumberOfPlayers: Int = 1
+    @State private var selectedComplexityOfSpirits: String = Complexity.all.rawValue
     
     var body: some View {
         NavigationView {
             VStack {
                 VStack {
                     VStack {
-                        Text("Select Number of Players")
+                        Text("Select number of players")
                         Picker("Number of Players", selection: $selectedNumberOfPlayers) {
                             ForEach(numberOfPlayers, id: \.self) { number in
                                 Text("\(number)").tag(number)
@@ -22,6 +23,15 @@ struct ContentView: View {
                     .padding()
                     
                     List {
+                        Section(header: HStack { Text("Select complexity of spirits").font(.headline) }) {
+                            Picker("Number of Players", selection: $selectedComplexityOfSpirits) {
+                                ForEach(complexityOFSpirits, id: \.self) { complexity in
+                                    Text("\(complexity)").tag(complexity)
+                                }
+                            }
+                            .pickerStyle(SegmentedPickerStyle())
+                        }
+                        
                         Section(header: HStack {
                             Text("Spirits Tiers").font(.headline)
                             NavigationLink(destination: TierListView()) {
@@ -66,7 +76,8 @@ struct ContentView: View {
                             adversariesItems: adversariesItems,
                             spiritItems: spiritItems,
                             tierItems: tierItems,
-                            selectedNumberOfPlayers: selectedNumberOfPlayers
+                            selectedNumberOfPlayers: selectedNumberOfPlayers,
+                            selectedComplexityOfSpirits: selectedComplexityOfSpirits
                         )
                     ) {
                         Text("Randomize")

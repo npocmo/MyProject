@@ -1,9 +1,10 @@
 import Foundation
 
 let numberOfPlayers = Array(1...6) // Array of numbers from 1 to 6
+let complexityOFSpirits = Array(Complexity.allCases.map { $0.rawValue })
 
-enum Complexity {
-    case low, moderate, high, very_high
+enum Complexity: String, CaseIterable {
+    case low, moderate, high, very_high, all
 }
 
 enum Tier: String, Equatable {
@@ -105,7 +106,7 @@ let spirits = [
     SpiritItem(spirit: Spirit(tier: .f, complexity: .low, name: "Shadows Flicker Like Flame", image: "Shadows_Flicker_Like_Flame_(Reach)", aspectName: "Reach")),
     SpiritItem(spirit: Spirit(tier: .d, complexity: .low, name: "Vital Strength of the Earth", image: "Vital_Strength_of_the_Earth_(Resilience)", aspectName: "Resilience")),
     SpiritItem(spirit: Spirit(tier: .d, complexity: .moderate, name: "Lightning's Swift Strike", image: "Lightning's_Swift_Strike", aspectName: "Immense")),
-    SpiritItem(spirit: Spirit(tier: .a, complexity: .low, name: "River Surges in Sunlight", image: "River_Surges_in_Sunlight", aspectName: "Travel")),
+    SpiritItem(spirit: Spirit(tier: .a, complexity: .moderate, name: "River Surges in Sunlight", image: "River_Surges_in_Sunlight", aspectName: "Travel")),
     SpiritItem(spirit: Spirit(tier: .f, complexity: .moderate, name: "Shadows Flicker Like Flame", image: "Shadows_Flicker_Like_Flame", aspectName: "Amorphous")),
     SpiritItem(spirit: Spirit(tier: .d, complexity: .moderate, name: "Shadows Flicker Like Flame", image: "Shadows_Flicker_Like_Flame", aspectName: "Foreboding")),
     SpiritItem(spirit: Spirit(tier: .c, complexity: .moderate, name: "Vital Strength of the Earth", image: "Vital_Strength_of_the_Earth", aspectName: "Might")),
