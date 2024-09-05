@@ -3,7 +3,7 @@ import SwiftUI
 struct SummaryView: View {
     let adversariesItems: [AdversaryItem]
     let spiritItems: [SpiritItem]
-    let tierItems: [TierItem]
+    let selectedTiers: [Tier]
     let selectedNumberOfPlayers: Int
     let selectedComplexityOfSpirits: [Complexity]
 
@@ -46,7 +46,7 @@ struct SummaryView: View {
     
     private func randomizeSpirits() -> [SpiritItem] {
         return SpiritRandomizer().randomize(
-            tierItems: tierItems,
+            selectedTiers: selectedTiers,
             selectedNumberOfPlayers: selectedNumberOfPlayers,
             selectedComplexityOfSpirits: selectedComplexityOfSpirits
         )
@@ -67,7 +67,7 @@ struct SummaryView: View {
                 spiritItems: [
                     SpiritItem(
                         spirit: Spirit(
-                            tier: .c,
+                            tier: .C,
                             complexity: .moderate,
                             name: "Shifting Memory of Ages",
                             image: "Shifting_Memory_of_Ages"
@@ -75,7 +75,7 @@ struct SummaryView: View {
                     ),
                     SpiritItem(
                         spirit: Spirit(
-                            tier: .d,
+                            tier: .D,
                             complexity: .high,
                             name: "Shroud of Silent Mist",
                             image: "Shroud_of_Silent_Mist"
@@ -83,7 +83,7 @@ struct SummaryView: View {
                     ),
                     SpiritItem(
                         spirit: Spirit(
-                            tier: .a,
+                            tier: .A,
                             complexity: .moderate,
                             name: "Grinning Trickster Stirs Up Trouble",
                             image: "Grinning_Trickster_Stirs_Up_Trouble"
@@ -91,7 +91,7 @@ struct SummaryView: View {
                     ),
                     SpiritItem(
                         spirit: Spirit(
-                            tier: .s,
+                            tier: .S,
                             complexity: .moderate,
                             name: "Many Minds Move as One",
                             image: "Many_Minds_Move_as_One"
@@ -99,7 +99,7 @@ struct SummaryView: View {
                     ),
                     SpiritItem(
                         spirit: Spirit(
-                            tier: .x,
+                            tier: .X,
                             complexity: .moderate,
                             name: "Stone's Unyielding Defiance",
                             image: "Stone's_Unyielding_Defiance"
@@ -107,7 +107,7 @@ struct SummaryView: View {
                     ),
                     SpiritItem(
                         spirit: Spirit(
-                            tier: .a,
+                            tier: .A,
                             complexity: .moderate,
                             name: "Volcano Looming High",
                             image: "Volcano_Looming_High"
@@ -115,7 +115,7 @@ struct SummaryView: View {
                     ),
                     SpiritItem(
                         spirit: Spirit(
-                            tier: .c,
+                            tier: .C,
                             complexity: .low,
                             name: "Lightning's Swift Strike",
                             image: "Lightning's_Swift_Strike_(Pandemonium)",
@@ -124,14 +124,14 @@ struct SummaryView: View {
                     ),
                     SpiritItem(
                         spirit: Spirit(
-                            tier: .c,
+                            tier: .C,
                             complexity: .low,
                             name: "Lightning's Swift Strike",
                             image: "Lightning's_Swift_Strike"
                         )
                     )
                 ],
-                tierItems: [.init(tier: .c), .init(tier: .b), .init(tier: .a)],
+                selectedTiers: [.C, .B, .A],
                 selectedNumberOfPlayers: 3,
                 selectedComplexityOfSpirits: [.low, .moderate, .high, .very_high]
             )

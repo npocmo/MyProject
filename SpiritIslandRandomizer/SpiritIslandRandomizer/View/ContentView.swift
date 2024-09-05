@@ -4,11 +4,12 @@ import MultiSelectSegmentedControl
 struct ContentView: View {
     @State private var adversariesItems: [AdversaryItem] = adversaries
     @State private var spiritItems: [SpiritItem] = spirits
-    @State private var tierItems: [TierItem] = tiers
+    @State private var selectedTiersIndex: IndexSet = [0, 1, 2, 3, 4, 5, 6]
     @State private var selectedNumberOfPlayers: Int = 1
     @State private var selectedComplexityOfSpiritsIndex: IndexSet = [0,1,2,3]
     
     private let comlexities: [Complexity] = [.low, .moderate, .high, .very_high]
+    private let tiers: [Tier] = [.X, .S, .A, .B, .C, .D, .F]
     
     var body: some View {
         NavigationView {
@@ -34,26 +35,20 @@ struct ContentView: View {
                     }
                     .padding()
                     
-                    List {
-                        Section(header: HStack {
-                            Text("Spirits Tiers").font(.headline)
-                            NavigationLink(destination: TierListView()) {
-                                Image(systemName: "info.circle")
-                                    .foregroundColor(.blue)
-                                    .padding(.trailing, 10)
-                            }
-                        }) {
-                            ForEach($tierItems) { $item in
-                                HStack {
-                                    Text(item.tier.rawValue.uppercased())
-                                    Image(systemName: item.isChecked ? "largecircle.fill.circle" : "circle")
-                                        .foregroundColor(.blue)
-                                    Spacer()
-                                }
-                                .contentShape(Rectangle()) // Ensures the entire row is tappable
-                                .onTapGesture { item.isChecked.toggle() }
-                            }
+                    VStack {
+                        Text("Spirit tiers")
+                        HStack {
+                            MultiSegmentPicker(
+                                selectedSegmentIndexes: $selectedTiersIndex,
+                                items: tiers
+                            )
+                            .accentColor(.blue)
+                            .fixedSize()
                         }
+                    }
+                    .padding()
+                    
+                    List {
                         Section(header: HStack { Text("Adversaries").font(.headline) }) {
                             ForEach($adversariesItems) { $item in
                                 HStack {
@@ -78,7 +73,13 @@ struct ContentView: View {
                         destination: SummaryView(
                             adversariesItems: adversariesItems,
                             spiritItems: spiritItems,
-                            tierItems: tierItems,
+                            selectedTiers: tiers.enumerated().compactMap { index, element in
+                                if selectedTiersIndex.contains(index) {
+                                    return element
+                                } else {
+                                    return nil
+                                }
+                            },
                             selectedNumberOfPlayers: selectedNumberOfPlayers,
                             selectedComplexityOfSpirits: comlexities.enumerated().compactMap { index, element in
                                 if selectedComplexityOfSpiritsIndex.contains(index) {
@@ -98,14 +99,13 @@ struct ContentView: View {
                     }.padding(.trailing, 30)
                     Button(action: {
                             self.adversariesItems = adversaries
-                            self.spiritItems = spirits
-                            self.tierItems = tiers
+                            self.selectedComplexityOfSpiritsIndex = [0, 1, 2, 3]
+                            self.selectedTiersIndex = [0, 1, 2, 3, 4, 5, 6]
                         },
                         label: { Text("RESET") }
                     )
                 }.padding()
             }
-            .navigationTitle("SI randomizer")
         }
     }
     

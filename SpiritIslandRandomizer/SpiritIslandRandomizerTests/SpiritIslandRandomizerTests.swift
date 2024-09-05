@@ -6,7 +6,7 @@ final class SpiritRandomizerTests: XCTestCase {
         let sut = createSut()
         
         let result = sut.randomize(
-            tierItems: [.init(tier: .x)],
+            selectedTiers: [.X],
             selectedNumberOfPlayers: 5,
             selectedComplexityOfSpirits: [.low, .moderate, .high, .very_high]
         )
@@ -18,7 +18,7 @@ final class SpiritRandomizerTests: XCTestCase {
         let sut = createSut()
         
         let result = sut.randomize(
-            tierItems: [.init(tier: .d)],
+            selectedTiers: [.D],
             selectedNumberOfPlayers: 8,
             selectedComplexityOfSpirits: [.low, .moderate, .high, .very_high]
         )
@@ -30,7 +30,7 @@ final class SpiritRandomizerTests: XCTestCase {
         let sut = createSut()
         
         let result = sut.randomize(
-            tierItems: [.init(tier: .d)],
+            selectedTiers: [.D],
             selectedNumberOfPlayers: 8,
             selectedComplexityOfSpirits: [.low]
         )
@@ -42,7 +42,7 @@ final class SpiritRandomizerTests: XCTestCase {
         let sut = createSut()
         
         let result = sut.randomize(
-            tierItems: [.init(tier: .b)],
+            selectedTiers: [.B],
             selectedNumberOfPlayers: 8,
             selectedComplexityOfSpirits: [.low]
         )
@@ -54,7 +54,7 @@ final class SpiritRandomizerTests: XCTestCase {
         let sut = createSut()
         
         let result = sut.randomize(
-            tierItems: [.init(tier: .a)],
+            selectedTiers: [.A],
             selectedNumberOfPlayers: 8,
             selectedComplexityOfSpirits: [.moderate]
         )

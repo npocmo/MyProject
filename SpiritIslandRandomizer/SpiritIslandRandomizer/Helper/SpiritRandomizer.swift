@@ -2,12 +2,11 @@ import Foundation
 
 class SpiritRandomizer {
     func randomize(
-        tierItems: [TierItem],
+        selectedTiers: [Tier],
         selectedNumberOfPlayers: Int,
         selectedComplexityOfSpirits: [Complexity]
     ) -> [SpiritItem] {
         let selectedSpiritsWithoutAspects = spirits.filter { $0.spirit.aspectName == nil }
-        let selectedTiers = tierItems.filter { $0.isChecked }.map { $0.tier }
         let selectedShuffledSpiritsWithoutAspects = selectedSpiritsWithoutAspects.shuffled()
         
         var result: [SpiritItem] = []
