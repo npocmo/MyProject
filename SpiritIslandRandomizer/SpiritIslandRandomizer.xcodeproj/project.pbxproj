@@ -20,6 +20,7 @@
 		53B6117C2C88A9A70019FBA3 /* SpiritRandomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B6117B2C88A9A70019FBA3 /* SpiritRandomizer.swift */; };
 		53E4A2942C694CD500F2DC9A /* TierListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E4A2932C694CD500F2DC9A /* TierListView.swift */; };
 		53E4A29A2C69E89200F2DC9A /* Zoomable in Frameworks */ = {isa = PBXBuildFile; productRef = 53E4A2992C69E89200F2DC9A /* Zoomable */; };
+		575CFBE82C899BA200DACDB8 /* MultiSelectSegmentedControl in Frameworks */ = {isa = PBXBuildFile; productRef = 575CFBE72C899BA200DACDB8 /* MultiSelectSegmentedControl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53E4A29A2C69E89200F2DC9A /* Zoomable in Frameworks */,
+				575CFBE82C899BA200DACDB8 /* MultiSelectSegmentedControl in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +190,7 @@
 			name = SpiritIslandRandomizer;
 			packageProductDependencies = (
 				53E4A2992C69E89200F2DC9A /* Zoomable */,
+				575CFBE72C899BA200DACDB8 /* MultiSelectSegmentedControl */,
 			);
 			productName = SpiritIslandRandomizer;
 			productReference = 533160442C663C840099FA31 /* SpiritIslandRandomizer.app */;
@@ -263,6 +266,7 @@
 			mainGroup = 5331603B2C663C840099FA31;
 			packageReferences = (
 				53E4A2982C69E89200F2DC9A /* XCRemoteSwiftPackageReference "Zoomable" */,
+				575CFBE62C899BA200DACDB8 /* XCRemoteSwiftPackageReference "MultiSelectSegmentedControl" */,
 			);
 			productRefGroup = 533160452C663C840099FA31 /* Products */;
 			projectDirPath = "";
@@ -679,6 +683,14 @@
 				kind = branch;
 			};
 		};
+		575CFBE62C899BA200DACDB8 /* XCRemoteSwiftPackageReference "MultiSelectSegmentedControl" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yonat/MultiSelectSegmentedControl";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -686,6 +698,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 53E4A2982C69E89200F2DC9A /* XCRemoteSwiftPackageReference "Zoomable" */;
 			productName = Zoomable;
+		};
+		575CFBE72C899BA200DACDB8 /* MultiSelectSegmentedControl */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 575CFBE62C899BA200DACDB8 /* XCRemoteSwiftPackageReference "MultiSelectSegmentedControl" */;
+			productName = MultiSelectSegmentedControl;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -4,7 +4,7 @@ let numberOfPlayers = Array(1...6) // Array of numbers from 1 to 6
 let complexityOFSpirits = Array(Complexity.allCases.map { $0.rawValue })
 
 enum Complexity: String, CaseIterable {
-    case low, moderate, high, very_high, all
+    case low, moderate, high, very_high
 }
 
 enum Tier: String, Equatable {

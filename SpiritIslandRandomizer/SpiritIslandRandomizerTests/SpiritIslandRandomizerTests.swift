@@ -8,7 +8,7 @@ final class SpiritRandomizerTests: XCTestCase {
         let result = sut.randomize(
             tierItems: [.init(tier: .x)],
             selectedNumberOfPlayers: 5,
-            selectedComplexityOfSpirits: "all"
+            selectedComplexityOfSpirits: [.low, .moderate, .high, .very_high]
         )
         
         XCTAssertEqual(result.count, 5)
@@ -20,7 +20,7 @@ final class SpiritRandomizerTests: XCTestCase {
         let result = sut.randomize(
             tierItems: [.init(tier: .d)],
             selectedNumberOfPlayers: 8,
-            selectedComplexityOfSpirits: "all"
+            selectedComplexityOfSpirits: [.low, .moderate, .high, .very_high]
         )
         
         XCTAssertEqual(result.count, 7)
@@ -32,7 +32,7 @@ final class SpiritRandomizerTests: XCTestCase {
         let result = sut.randomize(
             tierItems: [.init(tier: .d)],
             selectedNumberOfPlayers: 8,
-            selectedComplexityOfSpirits: "low"
+            selectedComplexityOfSpirits: [.low]
         )
         
         XCTAssertEqual(result.count, 3)
@@ -44,7 +44,7 @@ final class SpiritRandomizerTests: XCTestCase {
         let result = sut.randomize(
             tierItems: [.init(tier: .b)],
             selectedNumberOfPlayers: 8,
-            selectedComplexityOfSpirits: "low"
+            selectedComplexityOfSpirits: [.low]
         )
         
         XCTAssertEqual(result.count, 4)
@@ -56,7 +56,7 @@ final class SpiritRandomizerTests: XCTestCase {
         let result = sut.randomize(
             tierItems: [.init(tier: .a)],
             selectedNumberOfPlayers: 8,
-            selectedComplexityOfSpirits: "moderate"
+            selectedComplexityOfSpirits: [.moderate]
         )
         
         XCTAssertEqual(result.count, 6)

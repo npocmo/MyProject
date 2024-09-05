@@ -4,12 +4,10 @@ class SpiritRandomizer {
     func randomize(
         tierItems: [TierItem],
         selectedNumberOfPlayers: Int,
-        selectedComplexityOfSpirits: String
+        selectedComplexityOfSpirits: [Complexity]
     ) -> [SpiritItem] {
         let selectedSpiritsWithoutAspects = spirits.filter { $0.spirit.aspectName == nil }
         let selectedTiers = tierItems.filter { $0.isChecked }.map { $0.tier }
-        let selectedComplexityOfSpirits = Complexity(rawValue: selectedComplexityOfSpirits) ?? .all
-        
         let selectedShuffledSpiritsWithoutAspects = selectedSpiritsWithoutAspects.shuffled()
         
         var result: [SpiritItem] = []
@@ -39,7 +37,7 @@ class SpiritRandomizer {
         return result
     }
     
-    private func randomizeSpiritWithAspect(spirit: Spirit, availableSpirits: [SpiritItem], selectedTiers: [Tier], neededComplexity: Complexity) -> SpiritItem? {
+    private func randomizeSpiritWithAspect(spirit: Spirit, availableSpirits: [SpiritItem], selectedTiers: [Tier], neededComplexity: [Complexity]) -> SpiritItem? {
         return availableSpirits.filter {
             $0.spirit.name == spirit.name
         }.filter {
@@ -58,11 +56,7 @@ class SpiritRandomizer {
         return availableSpirits.filter { $0.spirit.name == spirit.name }.count > 1
     }
     
-    private func fitsComplexity(_ spirit: Spirit, neededComplexity: Complexity) -> Bool {
-        if neededComplexity == .all {
-            return true
-        } else {
-            return spirit.complexity == neededComplexity
-        }
+    private func fitsComplexity(_ spirit: Spirit, neededComplexity: [Complexity]) -> Bool {
+        return neededComplexity.contains(spirit.complexity)
     }
 }
