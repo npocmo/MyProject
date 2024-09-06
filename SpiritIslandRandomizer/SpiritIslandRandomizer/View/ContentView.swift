@@ -36,7 +36,14 @@ struct ContentView: View {
                     .padding()
                     
                     VStack {
-                        Text("Spirit tiers")
+                        HStack {
+                            Text("Spirit tiers")
+                            NavigationLink(destination: TierListView()) {
+                                Image(systemName: "info.circle")
+                                    .foregroundColor(.blue)
+                                    .padding(.trailing, 10)
+                            }
+                        }
                         HStack {
                             MultiSegmentPicker(
                                 selectedSegmentIndexes: $selectedTiersIndex,
